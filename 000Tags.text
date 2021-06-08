@@ -1,0 +1,506 @@
+******* 단락 *********
+
+<p></p> 태그
+
+    단락을 나타내는 태그로써 줄바꿈이 자동으로 일어난다.
+    속성으로 align가 있다. <p align="(left(왼쪽정렬),right(오른쪽 정렬),center(중앙정렬),justfy(맞춤정렬))"
+
+
+
+
+<pre></pre> 태그
+
+    HTML에서 작성한 그대로 (띄어쓰기면 띄어쓰기 줄바꿈이면 줄바꿈) 출력이된다.
+
+
+
+
+<hr> 태그
+
+    수평 가로 구분선 (띄어쓰기가 일어남)
+
+
+
+
+******** 문자열 서식 **************
+
+<b></b> 태그 , <strong></strong> 태그
+
+    감싼 텍스트를 굵게 표시하여 준다.
+
+
+
+
+<mark></mark> 태그
+
+    mark태그로 감싼 텍스트에 하이라이트를 추가합니다. (형광밑줄)
+
+
+
+
+<ins></ins> 태그
+    태그로 감싼 글자에 밑줄을 추가합니다.
+
+<del></del> 태그 
+    태그로 감싼 글자 가운데에 줄을 긋습니다.
+
+<sup></sup> 태그
+    태그로 감싼 글자를 위첨자로 추가합니다.
+
+<sub></sub> 태그
+    태그로 감싼 글자를 아래첨자로 추가합니다.
+
+
+
+
+*********** 인용 ********************
+
+<blockquote></blockquote> 태그
+   
+   별도의 단락으로 인용문을 출력한다.
+
+
+
+<abbr></abbr> 태그 
+
+    태그로 감싼 글자에 대해 점으로 밑줄이 쳐지고, 마우스를 가져다가면 텍스트를 보여지게 할 수 있습니다.
+ 
+    Ex) <abbr title="축약형 표현"> abbr </abbr>             <-- abbr에 밑줄이 처지고, 커서를 가져다 대면 "축약형 표현"이 보여짐
+
+
+
+
+************* 메타 *******************
+
+<meta> 태그
+    meta태그는 닫는태그가 없는 태그로 <head></head> 안에 위치해야한다.
+    meta태그는 웹브라우저에게 정보를 전달, 문서의 내용을 요약해주는 역할을 한다.
+
+    쓰임 -> 지정한페이지로 이동
+            <meta http-equiv="refresh" content="5; url=https://www.oooo.com">
+            싸이트주소가 바뀌었을 경우 사용하는 태그로써 5초뒤에 oooo.com으로 이동한다는 의미이다.
+
+
+
+
+************** 링크 ****************
+
+<a></a> 태그
+   (html 링크의 상태)
+    a:link    한번도 방문한적없는 상태
+    a:visited 한번이라도 방문한적 있는 상태
+    a:hover   링크위에 마우스 커서가 있는 상태
+    a:active  링크를 마우스로 누르고 있는 상태
+
+
+페이지 책갈피
+    * 같은페이지에서 이동이 가능함 *
+    <a href="#bookmark25"</a>                       <- name값이 bookrmark25인 곳으로 이동.    
+    <a name="bookmark25"> 북마크25 </a>              <- name값이 bookmark25
+
+ 
+
+
+************** 이미지 ***************
+
+<img> 태그
+        <img src="이미지의 주소" alt="대체문자열">      alt는 이미지가 로딩되지 않을 경우 대체문자열이 출력된다.
+
+        (이미지에 링크를 설정할수도있다)
+        <a href="주소"> <img src="" alt=""> </a>       그림을 클릭하는것을 통해 이동시킬 수 있음
+
+        (이미지 맵 만들기) <- **** 필요할때 꼭  찾아보기 사진의 구간별로 링크를 다르게 설정할 수 있음
+
+
+
+
+************* 테이블 *****************
+테이블이란 여러 종류의 데이터를 보기좋게 정리하는 표를 의미한다.
+
+<table></table>태그는 다음과 같은 태그들로 구성됨 ( <tr></tr>, <th></th>, <td></td> )
+
+<table>                                         <tr>태그는 열을 구분
+  <tr>                                          <th>태그는 각 열의 제목을 나타냄
+    <th>분류</th>                               <td>태그는 열의 각각을 cell로 나눈다
+    <th>항목</th>                               (* 열과 셀로 나누어 지지만, 선으로 나누어서 나타나지는 않는다.)
+  </tr>
+  <tr>
+    <td>과일</td>
+    <td>사과</td>
+  </tr>
+  <tr>
+    <td>채소</td>
+    <td>당근</td>
+  </tr>
+</table>
+
+
+테이블의 스타일     border 속성을 따로 설정해준다면 선으로 나누어진 표를 만들 수 있다.
+
+<caption></caption> 태그
+    <table></table>태그 안에 넣는 것으로 테이블 상단에 짧은 제목이나 설명을 넣을 수 있다.
+
+    <table>
+        <caption> 짧은제목 설명 </caption>
+    </table>
+
+
+
+
+***************** 블럭 & 인라인 *******************
+
+<div></div> 태그
+
+    "블럭"로 여러 HTML요소를 묶는데 이용된다. 주로 여러 요소들의 스타일을 한번에 처리하기 위해서 이용됨
+
+<span></span> 태그
+
+    "인라인"로 텍스트의 특정부분을 묶는데 자주 사용된다. 텍스트의 특정부분에 스타일을 적용하기위해서 사용됨
+
+
+
+
+*************** iframe **************************
+
+<iframe></iframe> 태그 
+
+    iframe태그를 이용하면 자신의 웹페이지에 또다른 웹페이지를 삽입할 수 있다.
+
+    <iframe src="url주소"></iframe>         <- style의 height,width를 통해 삽입할 웹사이트의 크기를 설정할 수 있다.
+
+
+
+    iframe태그를 이용하여 요소의 페이지를 변경할 수도 있다.
+
+    <iframe src="//www.devkuma.com" name="frame_target" style="width:100%; height:400px;"></iframe>
+    <p>
+        <a href="//www.google.com" target="frame_target">구글로 이동</a>
+    </p>
+
+    <a>에 코드를 보면 target frame_target에 google을 로딩한다라는 코드다  즉, <a>의 링크를 클릭하게 되면
+    삽입되어있던 웹사이트가 변한다는 의미
+
+
+
+
+
+************************* 레이아웃 *********************
+
+레이아웃이란 문자 이미지등의 구성요소를 보기쉽게 효과적으로 배치하는것을 말한다.
+
+의미 요소	설명
+<header>	HTML 문서나 섹션(section) 부분에 대한 헤더(header)를 정의함.
+<nav>	HTML 문서의 탐색 링크를 정의함.
+<section>	HTML 문서의 주요 콘텐츠(content)를 정의함.
+<article>	HTML 문서에서 섹션(section) 부분을 정의함.
+<aside>	HTML 문서에서 독립적인 하나의 글(article) 부분을 정의함.
+<footer>	HTML 문서에서 페이지 부분 이외의 콘텐츠(content)를 정의함.
+
+HTML5 의미 요소를 이용한 레이아웃
+HTML5에서는 웹 페이지의 레이아웃만을 위한 별도의 새로운 요소들을 제공한다. 이러한 요소들을 의미(semantic) 요소라고 한다.
+
+의미(semantic) 요소는 기능은 없지만 의미를 명확하게 하여, 컴퓨터가 정보를 이해하고 논리적인 추론까지 할 수 있는 구조를 만들기 위해 추가된 태그이다. 검색 엔진 최적화(SEO)를 할 시에 중요한 역활을 한다.
+
+Ex) 
+<header>Header</header>
+<nav>Nav</nav>
+<section>
+  Section
+  <article>Article</article>
+</section>
+<aside>Aside</aside>
+<footer>Footer</footer>
+
+
+
+
+********************** form **********************
+
+form 요소를 이용하면 사용자로부터 입력을 받을 수 있다. 또한, 사용자가 보낸 데이터를 서버로 보낼때에도 사용한다.
+
+action 속성     입력받은 데이터를 처리할 서버상의 url주소를 명시
+
+method 속성     입력받은 데이터를 서버에 전달할 방법을 명시
+
+* <form action="A" method="get/post"> </form>           <--- get또는post 방법으로 A에서 데이터를 처리하기
+
+    method 중 get/post
+
+    get         get방식은 주소에 데이터를 추가하여 전달하는 것으로 전송할때 "데이터크기가 제한적"이므로, "크기가작고 중요도가 낮은 정보를
+                보낼때 사용한다."
+
+    post        post방식은 주소에 데이터를 추가하여 전달하는것이 아닌 데이터를 별도로 첨부하여 전달하는 방식이다.  데이터각 외부에 들어나지
+                않기때문에 "보안성이 get방식보다 훨씬 보안성이 높고, 용량제한 또한 없다."
+
+
+
+
+********************** 입력요소 타입 ***************
+
+<input></input>태그
+    form태그는 다양한 input요소를 포함하여 사용할 수 있다.
+
+    <<<<<input태그의 요소>>>>>>>>>
+
+    텍스트 입력         <input type="text" name="title">        type="text"로 설정하면, 사용자로부터 한줄의 텍스트를 입력받을 수 있다
+
+
+    비밀번호 입력       <input type="password" name="username"> type="password"로 설정하면, 비밀번호로 문자나 숫자를 입력받을 수 있는데 * 등으로 가려져서 출력된다
+
+
+    전송 버튼           <input type="submit" value="전송">      type="submit"로 설정하면, 사용자로부터 입력받은 데이터를 전송할 수 있는 버튼을 생성할 수 있다. (여기서 value값에 전송을 넣었기 때문에 '전송'이라고 적힌 버튼이 생성된다.)
+
+
+    재설정 버튼         <input type="text" name="username" value="초기값">
+                       <input type="rest" value="재설정">       
+                       
+                       type="rest"로 설정하면, 사용자가 입력한 값이 초기값으로 재설정되는 '버튼'이 생성된다.
+                       위의 예제에서는 '재설정'이라고 쓰여진 버튼이 생성되고, 그 버튼을 누르게되면 텍스트를 입력받는곳에 내용이 '초기값'으로 다시 바뀐다.
+
+
+    이미지 버튼         <input type="image" src=""> type="image"로 설정하면, 전송하는 버튼을 사용자가 선택한 이미지로 바꿀 수 있다.
+
+
+    일반 버튼           <input type="button" onclick="" value=""> 일반적인 버튼이 생성된다. (여기에 여러가지 속성을 넣을 수 o)
+
+
+    라디오 버튼         <input type="radio" name="fruit" value="apple">
+                        <input type="radio" name="fruit" value="Orange">
+                        <input type="radio" name="fruit" value="Banana">
+                        <input type="radio" name="fruit" value="melon">
+                        
+                        type="radio"로 설정하게되면, 사용자로부터 선택할 수 있는 여러 옵션을 만들 수 있다. 그중 한개만 사용자는 선택할 수 있다.
+                        ****"이때 서버로 정확한 입력을 전송하기 위해서는 name의 속성이 모두 같아야한다."
+
+
+    체크박스            <input type="checkbox" name="fruit" value="apple">
+                        <input type="checkbox" name="fruit" value="Orange">
+                        <input type="checkbox" name="fruit" value="Banana">
+
+                        type="checkbox"로 설정하면, 사용자로부터 선택할 수 있는 여러 옵션을 만들 수 있다.
+                        라디오버튼과 다르게 여러가지를 사용자는 선택할 수 있다.
+                        ***** 이때도 마찬가지로 name의 속성은 모두 같아야한다.
+
+
+    파일선택            <input type="file" name="" accept="">    type="file"로 설정하면, 파일을 전송할 수 있다.
+
+
+    숫자 입력           <input type="number" name="num" min="" max="">
+                        type="number"로 설정하게되면 사용자가 숫자를 입력할 수 있게 해준다.
+                        여기서 특별한점은 min과 max을 통해서 숫자선택의 제한값을 설정할 수 있다는 점이다.
+
+
+    색상 입력           <input type="color" name=".." value="맨처음으로 보여줄 색상">
+                        type="color"로 설정하게되면 사용자가 색상을 입력할 수 있도록 합니다.                       
+
+
+    날짜 입력           <input type="date" name="day">  type="date"로 설정하면, 사용자가 날짜를 입력할 수 있게 해줍니다.(달력으로)
+                        또한 마찬가지로 min, max을 통해서 날짜의 제한값을 둘 수 있습니다.
+
+
+    시간 입력           <input type="time" name="time">  type="time"로 설정하면, 사용자가 시간을 입력할 수 있게 해줍니다.
+
+
+    날짜와 시간 입력    <input type="datetime-local" name="time">  type="datetime-local"로 설정하면, 사용자가
+                        날짜와 시간을 입력할 수 있도록 한다.
+
+
+    연도와 월 입력      <input type="month" name="month"> type="month"로 설정하면, 사용자가 연도와 월을 입력할 수 있다.
+
+
+    연도와 주 입력      <input type="week" name="week"> type="week"로 설정하면, 사용자가 연도와 몇번째 주인지를 입력할 수 있다.
+
+
+    이메일 입력         <input type="email" name="email">   type="email"로 설정하면, 사용자가 이메일을 입력할 수 있도록 한다.
+
+
+    Url 주소 입력       <input type="url"    name="url">    type="url"로 설정하면, 사용자가 url주소를 입력 할 수 있도록 한다.                                        
+
+
+    전화번호 입력       <input type="tel" name="tel">   type="tel"로 설정하면, 사용자가 전화번호를 입력 할 수 있도록 한다.
+
+
+    검색어 입력         <input type="search" name="keyword"> type="search"로 설정하면, 사용자가 검색어를 입력할 수 있도록 한다.
+                        type="text"와 다른점은 입력한 문자를 바로 지울 수 있는 x가 하나 추가된다는 점이다.
+
+
+
+
+*************** input 속성 *************************
+
+value 속성          <input type="text" name="name" value="초기화값"> value는 입력필드에 표시되는 초깃값을 설정함
+
+readonly 속성       <input type="text" name="name" value="초기화값" readonly> value로 초기화된 값을 수정할 수 없도록 함
+                    disable과 다른점은 "submit을 통해서 서버로 값을 전송할 수 있다는 점이 다르다."
+
+
+disable 속성        <input type="text" name="name" value="초기화값" disable> value값으로 초기화된 값을 수정할 수 없고
+                    readonly과 다른점은 "submit을 통해서도 서버로 값을 전송할 수 없다."
+
+
+maxlength 속성      <input type="text" name="name" value="초기화값" maxlength="최대문자수"> maxlength=""로 최대문자수를 제한이 가능하다
+
+
+size 속성           <input type="text" name="name" value="초기화값" size="보일 문자수"> size를 통해서는 입력가능한 문자수를 제한하는게
+                    아니라, "한번에 보여지는 문자수를 제한한다."
+
+
+placeholder 속성    <input type="text" name="name" placeholder="">  placeholder을 통해서 아무것도 입력안했을시 글자가 희미하게 뜨게함.  
+
+
+
+
+*************** 선택 입력 (select) ******************
+<select></select> 태그는 여러가지의 옵션이 (드롭다운 리스트)로 되어있는데 그중에서 단 하나의 옵션만을 선택할 수 있다.
+
+Ex)         <select name="fruit">
+                <option value="apple">사과</option>
+                <option value="banana" selected>바나나</option>
+                <option value="orange">오렌지</option>
+                <option value="strawberry">딸기</option>
+            </select>
+    위에 예제에서는 사과,바나나,오렌지,딸기중 드롭다운 리스트로 되어있는것중 하나를 택 할 수 있다.
+
+
+
+<option></option> 태그 
+
+    <select></select>사이에 오는 태그로서
+    option요소는 여러항목 중 선택 가능한 항목을 의미한다.
+
+
+
+
+**************** 문장 입력 (textarea) *****************
+
+<textarea></textarea> 태그
+    textarea태그는 input type="text"와 다르게 "여러줄"의 텍스트를 받을 수 있다.
+
+    <textarea name="content" rows="" cols=""> </textarea>   textarea는 너비와 높이를 지정하기위해서 rows와 cols 속성을 입력받는다.
+
+
+
+
+**************** 버튼 (button) *************************
+
+<button></button>태그               버튼 요소는 사용자가 누를 수 있는 버튼을 표시한다.
+
+    <button type="button" onclick=""> </button>
+    ***<button>태그 대신 <input type="button".....>으로도 표기가 가능하다.
+
+
+
+
+**************** 필드셋 (fieldset) **********************
+
+<fieldset></fieldset>태그
+    fieldset태그는 form관련된 요소들을 하나로 묶는 역할을 합니다.   * legend요소는 fieldset안에서만 사용이 가능합니다. 
+                                                                   legend는 fieldset요소의 제목을 표시합니다.
+
+    <form>
+  <fieldset>                                                    <-- form안에서 fieldset으로 감싸는 것을 알 수 있다.
+    <legend>로그인 인증</legend>                                 <-- legend태그를 이용하여서 fieldset 제목을 표시함.
+    <p>사용자명 : <input type="text" name="username"></p>
+    <p>비밀번호 : <input type="password" name="password"></p>
+    <button type="button">로그인</button>
+  </fieldset>
+</form>              
+
+
+
+
+****************** 라벨 (label) **************************
+
+label 요소는 사용자가 input text, checkbox, radio button의등을 좀 더 쉽게 선택할 수 있도록 도와준다.
+label 요소를 클릭하면 input text의 경우에는 자동으로 focus가 이동하고 checkbox, radio button의 경우는 자동으로 선택된다.
+label의 for 속성의 이름과 폼요소의 id 값이 일치하게 아래와 같이 작성하면 된다.
+
+<label for="html">HTML</label> <input type="checkbox" name="html" id="html">
+<label for="css">CSS</label> <input type="checkbox" name="css" id="css">
+
+
+
+
+****************** 시멘틱(semantic) 요소 ******************
+
+시멘틱 요소란 그자체에 의미를 가지고 있는 태그를 말한다.(태그만으로 의미가 명확한 것들)
+그에 비해 div, span태그들은 내부를 봐야만 의미를 알 수 있기에 비시멘틱 요소이다.
+
+<<<< 시멘틱 요소 >>>>
+<header>	HTML 문서나 섹션(section) 부분에 대한 헤더(header)를 나타낼 때 사용한다.
+<nav>	HTML 문서 사이를 탐색할 수 있는 링크(link)의 집합을 나타낼 때 사용한다.
+<main>	HTML 문서의 주요 콘텐츠(content)를 정의함.
+<section>	HTML 문서에서 섹션(section) 부분으로 내용의 컨텐츠를 나타낼 때 사용한다.
+<article>	HTML 문서에서 내용의 컨텐츠 중에 독립적인 하나의 글(article) 부분을 나타낼 때 사용한다.
+<aside>	HTML 문서에서 페이지 부분 이외의 컨텐츠(content)를 나타낼 때 사용한다.
+<figure>	HTML 문서에서 그래픽과 비디오 등의 독립적인 컨텐츠(content)를 나타낼 때 사용한다.
+<figcaption>	figure 요소를 위한 캡션을 나타낼 때 사용한다.
+<footer>	HTML 문서나 섹션(section) 부분에 대한 푸터(footer)를 나타낼 때 사용한다.
+<bdi>	기본 출력방향과는 다른 방향으로 출력되는 텍스트를 나타낼 때 사용한다.
+<mark>	하이라이팅된 텍스트를 정의함.
+<details>	사용자가 보거나 숨길 수 있는 추가적인 설명문을 나타낼 때 사용한다.
+<summary>	details 요소에 나타날 내용을 정의함.
+<dialog>	다이얼로그(dialog) 박스나 다이얼로그 윈도우를 정의함.
+<menuitem>	사용자가 팝업 메뉴(popup menu)를 통해 선택할 수 있는 메뉴의 아이템(menu item)을 나타낼 때 사용한다.
+<meter>	정해진 범위 내의 스칼라 치수를 나타낼 때 사용한다.
+<progress>	작업에 대한 진행 정도를 나타낼 때 사용한다.
+<ruby>	루비(ruby) 문자를 나타낼 때 사용한다. 루비란? 임의의 문자(보통은 한자)에 대해 읽는 법을 알려주는 문자를 말한다.
+<rt>	본문 위에 나타날 문자를 나타낼 때 사용한다.
+<rp>	루비(ruby) 문자를 지원하지 않는 브라우저에서만 나타날 내용을 나타낼 때 사용한다.
+<time>	날짜와 시간을 나타낼 때 사용한다.
+<wbr>	br 요소와는 달리 긴 단어가 화면의 맨 끝에 오면 상황에 따라 줄 바꿈 할 곳을 미리 나타낼 때 사용한다.
+
+
+추가설명**
+<header> HTML 페이지나 섹션 부분에 대해서 헤더를 정의하는데 각 페이지의 맨위에 출력되는 이미지나 텍스트등의 조합이다.
+         *** 단, 한페이지 내에서 여러개의 header가 존재할 수 없다.
+
+
+<nav>   링크의 집합을 정의한다.     단, 모든 링크가 이곳에 집합하는것은 아니다.
+        Ex)         <nav>
+                        <a href="/html/html5_element_semantic">의미 요소</a> |
+                        <a href="/htmlhtml5_element_form/">Forms 요소</a> |
+                        <a href="/html/html5_element_inputtype">Input 요소</a>
+                    </nav>
+
+
+<section>   문서의 전체적인 내용과 관련있는 컨텐츠끼리 묶는다.
+
+
+<article>   웹사이트의 나머지 부분과 독립적으로 이해가 가능하게 나눌 수 있는 부분
+
+
+<figure>    그래픽 비디오 같은 독립적인 콘텐츠를 정의할때 사용되는 태그
+
+
+<footer>    일반적으로 사이트의 작성자나 그에따르 저작권정보, 연락처등을 명시함.   *한 문서내에 여러가지 footer가 있어도 된다.
+
+
+
+
+********************** input태그 속성 *********************
+
+autocomplete 속성
+    autocomplete속성은 form요소나 input요소에 입력되는 정보를 자동 저장할지에 대한 여부를 명시한다.
+
+    <form action="/" autocomplete="on">
+  이름 : <input type="text" name="name"><br>
+  이메일 : <input type="email" name="email" autocomplete="off"><br><br>         <-- autocomplete 부분이 on일 경우 정보가 자동 저장된다
+  <input type="submit">
+</form>
+
+***** 단, text, search, url, tel, email, password, datepickers, range, color 이러한 속성들에서만 자동저장이 가능하다.
+
+
+
+novalidate 속성
+    novalidate는 form태그에 대한 속성이다. 이 속성을 입력하게 되면 입력한 정보를 전송할때 그 정보가 유효한지 유효성 검사에 대한 여부를 명시함
+
+    <form action="/" novalidate>  </form>
+
+
+
+autofocus 속성
+
+
+

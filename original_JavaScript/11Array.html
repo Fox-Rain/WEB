@@ -1,0 +1,25 @@
+<!doctype>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script type="text/javascript">
+            var array = ["미뇽","민용","민영"];
+            document.write(array[0]+"<br>")         // index는 0부터 시작
+            document.write(array[1]+"<br>")
+            document.write(array[2]+"<br>")
+
+            // 배열의 효용성
+            function get_members()
+            {
+                return ["a","b","c"];               // 리턴값이 배열
+            }
+
+            var members = get_members();            // 리턴값(배열)을 members라는 배열에 대입
+            document.write(members(0));
+            document.write(members(1));
+            document.write(members(2));             
+        </script>
+    </body>
+</html>

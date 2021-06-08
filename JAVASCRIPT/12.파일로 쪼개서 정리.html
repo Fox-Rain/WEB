@@ -1,0 +1,29 @@
+!doctype html>
+<html>
+    <head>
+        <title>Object</title>
+        <meta charset="utf-8">
+    </head>
+    <style>
+
+    </style>
+    <body>
+        <h1>Object</h1>
+        <h2>Create</h2>
+        
+        <script src="12.파일로 쪼개서 정리.js"></script>    <!-- 이런식으로 javascript파일을 불러오는 식으로 코드를 짜게되면-->
+                                                           <!-- 유지보수가 편해진다.-->
+        <h2>Iterate</h2>
+        <!-- 객체의 값을 순회하는법 -->
+        <script>
+            // var 변수 in 객체명  <-- 변수에 객체명의 키값을 불러옴 (앞에값 === 키값)
+            for (var key in imformations) {
+                document.write(key+"<br>")
+            }
+            // 위에서 키값을 가져올 수 있으므로, 객체명[키값] <-- 이 형식을 통해 value값을 가져올 수 있다.
+            for (var key in imformations) {
+                document.write(imformations[key]+"<br>")
+            }
+        </script>
+    </body>
+</html>

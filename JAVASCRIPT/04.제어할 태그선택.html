@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+    </head>
+
+    <style>
+
+    </style>
+
+    <body>
+        <h1>네이버</h1>
+        <h1>구글</h1>
+        <!-- input태그로 버튼을 만들고 이벤트로 onclick속성을 부여 document.querySelector('')로 태그 선택후 , .style을 이용하여
+             그 태그의 관련된 CSS를 바꾸는 이벤트를 설정하였다. -->
+        <input type="button" value="dark" onclick="
+         document.querySelector('body').style.backgroundColor='black'; 
+         document.querySelector('body').style.color='white';
+        ">
+        <input type="button" value="day" onclick="
+         document.querySelector('body').style.backgroundColor='white';
+         document.querySelector('body').style.color='black';
+        ">
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>IF</title>
+        <meta charset="utf-8">
+    </head>
+    <style>
+
+    </style>
+    <body>
+        <h1>네이버</h1>
+        <h1>구글</h1>
+        
+        <input id="dark_day" type="button" value="day" onclick="
+        if(document.querySelector('#dark_day').value==='dark'){ /* doc...queryselector('#').value으로 id''을 가진것의 value값을 가져와 비교' */
+         document.querySelector('body').style.backgroundColor='white';
+         document.querySelector('body').style.color='black';
+         document.querySelector('#dark_day').value='day';   /* 이후 데이모드로 바뀌었으므로 value값을 바꾸어줌 */
+        }
+        else{
+         document.querySelector('body').style.backgroundColor='black';
+         document.querySelector('body').style.color='white';
+         document.querySelector('#dark_day').value='dark';
+        } 
+        ">
+    </body>
+</html>

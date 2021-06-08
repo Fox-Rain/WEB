@@ -1,0 +1,46 @@
+<!-- 배열과 반복문을 사용하여서 모든 링크에 색을 바꿈 -->
+<!doctype html>
+<html>
+    <head>
+        <title>Array</title>
+        <meta charset="utf-8">
+    </head>
+    <style>
+
+    </style>
+    <body>
+        <h1><a href="https://naver.com" title="네이버" target="blank">네이버</a></h1>
+        <h1><a href="https://google.com" title="구글" target="blank">구글</a></h1>
+        
+        <input type="button" value="day" onclick="    
+        var target=document.querySelector('body');    
+        if(this.value==='dark'){                      
+         target.style.backgroundColor='white';
+         target.style.color='black';
+         this.value='day';
+
+         var a_list = document.querySelectorAll('a');       // querySelectorAll('')은 ''인 태그들을 배열의 형태로 다 불러온다.
+         var i = 0;
+         
+         while(i < a_list.length){
+            a_list[i].style.color='powderblue';
+            i+=1;
+        }
+        }
+
+        else{
+         target.style.backgroundColor='black';
+         target.style.color='white';
+         this.value='dark';
+
+         var a_list = document.querySelectorAll('a');
+         var i = 0;
+         
+         while(i < a_list.length){
+            a_list[i].style.color='blue';
+            i+=1;
+        }
+        } 
+        ">
+    </body>
+</html>

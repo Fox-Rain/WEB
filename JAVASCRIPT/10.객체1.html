@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Object</title>
+        <meta charset="utf-8">
+    </head>
+    <style>
+
+    </style>
+    <body>
+        <h1>Object</h1>
+        <h2>Create</h2>
+        
+        <script>
+            /* 객체를 생성할때는 객체명{};  <-- 이 형태를 사용한다.*/
+            var imformations={
+                "pet":"dog",
+                "address":"607-1201"
+            };
+            document.write("pet: "+imformations.pet+"<br>");         // 객체에 메서드를 불러낼때는 객체.메서드 <-이러한 형식으로 불러야한다.
+            document.write("address: "+imformations.address+"<br>"); // imformations.address로 객체에서의 메서드를 불러냄.
+            imformations.phone ="iphone xs max";                     // 객체명.메서드명 = "내용" 이런식으로 만들어진 객체에 메서드 추가 O
+            document.write("phone: "+imformations.phone+"<br>");            // imformations.phone
+            imformations["data scientist"] = "sj";                   // *** 객체명[]을 사용하면 띄어쓰기된 단어도 메서드로 추가할 수 있다.
+            document.write("data scientist: "+imformations["data scientist"]+"<br>");  // *** 단, 불러올때도 []을 이용해야 한다
+        </script>
+
+        <h2>Iterate</h2>
+        <!-- 객체의 값을 순회하는법 -->
+        <script>
+            // var 변수 in 객체명  <-- 변수에 객체명의 키값을 불러옴 (앞에값 === 키값)
+            for (var key in imformations) {
+                document.write(key+"<br>")
+            }
+            // 위에서 키값을 가져올 수 있으므로, 객체명[키값] <-- 이 형식을 통해 value값을 가져올 수 있다.
+            for (var key in imformations) {
+                document.write(imformations[key]+"<br>")
+            }
+        </script>
+    </body>
+</html>

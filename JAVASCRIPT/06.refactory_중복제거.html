@@ -1,0 +1,42 @@
+<!-- 중복되는것들은 변수로 빼서 처리하기 & this -->
+
+<!doctype html>
+<html>
+    <head>
+        <title>IF</title>
+        <meta charset="utf-8">
+    </head>
+    <style>
+
+    </style>
+    <body>
+        <h1>네이버</h1>
+        <h1>구글</h1>
+        
+        <!--<input id="dark_day type="button" value="day" onclick="
+        if(document.querySelector('#dark_day').value==='dark'){ 
+         document.querySelector('body').style.backgroundColor='white';
+         document.querySelector('body').style.color='black';
+         document.querySelector('#dark_day').value='day'; 
+        }
+        else{
+         document.querySelector('body').style.backgroundColor='black';
+         document.querySelector('body').style.color='white';
+         document.querySelector('#dark_day').value='dark';
+        } 
+        "> -->
+        <input type="button" value="day" onclick="    // this을 사용하면 자기자신을 가르킴 
+        var target=document.querySelector('body');    // 중복되는 document.querySelector('body')을 target이란 변수로 바꾸어 중복을 제거
+        if(this.value==='dark'){                      // this을 통해서 document.querySelector('#dark_day')을 this로 생략가능 
+         target.style.backgroundColor='white';
+         target.style.color='black';
+         this.value='day'; 
+        }
+        else{
+         target.style.backgroundColor='black';
+         target.style.color='white';
+         this.value='dark';
+        } 
+        ">
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype>
+<html>
+    <head>
+
+    </head>
+    
+    <style>
+        /*이런식으로 전체를 사용하는 태그들을 "block level element" 이라고 부른다. (여기서 h1은 전체를 사용함.) */
+        h1{
+            /*아래의 3줄의 코드들을 이렇게 줄일 수도 있다 == border:5px coral solid; */
+            /*border의 width는 테두리의 두께, color은 테두리의 색, style은 테두리 선의 스타일을 말한다.  */
+            border-width:5px;
+            border-color:coral;
+            border-style:solid;
+         /* display:inline; <-- 이것을 통해서 블럭태그들도 인라인태그들 처럼 부분적으로 자리를 차지하게 바꿀 수 도 있다. */
+        }
+
+        /*이런식으로 전체가 아닌 부분을 사용하는 태그들을 "inline element" 라고 부른다. */
+        a{
+            border-width:5px;
+            border-color:coral;
+            border-style:solid;
+         /* display:block; <-- 이것을 통해서 인라인태그들도 블럭태그들 처럼 전체를 차지하게 바꿀 수 도 있다. */    
+        }
+    </style>
+
+    <body>
+        <h1>CSS</h1>
+        <a href="https://www.w3schools.com/css/css_intro.asp" title="what is css">CSS</a> is  Cascading style sheets
+
+
+
+    </body>
+
+</html>

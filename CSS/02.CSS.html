@@ -1,0 +1,24 @@
+<!-- 선택자 -->
+<!doctype html>
+<html>
+    <head>
+        <title>CSS</title>
+    </head>
+
+   <!-- 우선순위: 태그 선택자 < 클래스 선택자 < 아이디 선택자 (만약 선택자끼리의 우선순위가 같다면 마지막에 쓰여있는 선택자가 우선적임.)-->
+   <!-- 한id당 한곳에서만 쓰임. 따라서  우선순위가 id가 높은것이다.-->
+   <!-- 클래스 선택자는 '.', 아이디 선택자는 '#'을 앞에다가 붙여준다. -->
+   <style>
+        a { color:black; text-decoration:none;}
+        .saw {color:red;}
+        #active{color:blue;}
+
+    </style>
+
+    <body>
+        <h1 style="font-size:60px"><a href="https://naver.com">네이버</a></h1><br>
+        <h1 style="font-size:60px"><a href="https://google.com" class="saw">구글</a></h1><br>
+        <h1 style="font-size:60px"><a href="https://daum.net" id="active">다음</a></h1><br>
+
+    </body>
+</html>

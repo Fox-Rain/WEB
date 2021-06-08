@@ -1,0 +1,29 @@
+<!-- CSS는 html과 다르게 어떠한 주요한 정보를 설명하는것이 아닌, 디자인과 관련된 정보를 가진것을 말한다. -->
+<!-- CSS와 html은 완전히 다른 언어이므로 요청할때 어떤 언어인지 표시를 해주어야한다. 따라서 CSS로 받아들여야하는 코드는 <style></style>로-->
+<!-- 감싸주어야 한다.-->
+<!doctype html>
+<html>
+    <head>
+        <title>CSS</title>
+    </head>
+    <!-- <style> a {color:red;} </style>        'a'라는 태그를 가진 '모든' 것들을 color색으로 바꾼다. -->
+    <!-- 물론 <font color=""></font> 폰트 태그로도 바꿀 수 있지만, css를 사용하면 전체적인 것들을 한번에 바꿀 수 있는 장점이 있다.-->   
+    <style>         
+        a {color:blueviolet;}
+    </style>
+
+    <body>
+        <h2><a href="https://naver.com" title="네이버">네이버</a></h2><br>
+
+        <!-- 이런식으로 태그안에서 style="color:;" 로 원하는 부분만 색을 바꿀 수 도 있다.-->
+        <!-- 이런식으로 style"속성"으로 사용될 경우 태그안에 style속성이 적용된다. (그 Tag에만 적용이 된다.)-->
+        <h2><a href="https://google.com" title="구글" style="color:red">구글</a></h2><br>
+        
+        <!-- 만약 한 태그에서 여러 css를 사용하고 싶은경우, ;을 통해 구분하여 여러개를 쓸 수 있다.-->
+        <!-- text-decoration: none 으로 하여 꾸밈을 없앰.-->
+        <h2><a href="https://daum.net" title="다음" style="color:burlywood; text-decoration:none">다음</a></h2>
+
+
+    </body>
+
+</html>

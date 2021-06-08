@@ -1,0 +1,9 @@
+#grid{
+    border:5px gray pink;
+    display:grid;
+    grid-template-columns: 150px 1fr;
+}
+
+#grid div{                      
+    border:5px gray solid;
+}

@@ -1,0 +1,31 @@
+<!-- 또한 어떻게 CSS를 사용하나에 따라서 작동이 안되는 컴퓨터가 있을 수 있으므로 caniuse사이트에서 꼭 확인해보기-->
+
+<!doctype html>
+<html>
+    <head>
+
+    </head>
+    <style>
+        #grid{
+            border:5px gray pink;
+            display:grid;
+            grid-template-columns: 150px 1fr;
+        }
+
+        #grid div{                      /* #grid div로 지정해주면 그냥 div가 아닌 id=grid 인 부모 아래의 div로 정확히 나타낼 수 있다. */
+            border:5px gray solid;
+        }
+
+    </style>
+    <body>
+        <!-- div는 box level element로 전체를 쓰기때문에 자동적으로 줄바꿈이 일어난다. -->
+        <div id="grid">
+            <div>Hello</div>
+            <div>Hello</div>
+        </div>    
+        <!-- span은 inline level elenent로 부분적으로 쓰기때문에 줄바꿈이 일어나지 않는다
+        <span>Hello</span>
+        <span>Hello</span>                                                             -->
+    </body>
+
+</html>

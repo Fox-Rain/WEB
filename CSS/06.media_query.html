@@ -1,0 +1,27 @@
+<!-- 미디어쿼리란 화면에 크기에 따라 보여지는 요소가 달라지는 것을 말한다. -->
+<!doctype html>
+<html>
+    <head>
+
+    </head>
+
+    <style>
+        div {
+            font-size:60px;
+            border:10px green solid;
+        }    
+        /* 미디어 쿼리란 어떠한 조건이 만족될때만 실행되게 하는것을 말한다. */
+        @media(min-width:800px) {           /* @media를 통해 미디어쿼리를 실행시키고 min-width(최소 800px라는것) 즉 800픽셀보다 커질 경우 */
+            div{
+                display:none;               /* div태그를 가진것의 디스플레이속성을 none으로 바꾼다. */
+            }
+        }    
+    </style>
+
+    <body>
+        <div>
+            responsive
+        </div>
+    </body>
+
+</html>
